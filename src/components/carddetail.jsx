@@ -26,7 +26,7 @@ export default class Carddetail extends Component {
                     </div>
                     <div className="titresite">
                         {this.props.card.titre}
-                        <p>by François Massart</p>
+                        <p>by the big François Massart</p>
                     </div>
                 </div>
             )
