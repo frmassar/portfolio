@@ -1,0 +1,266 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color:black;
+}
+.header{
+
+  background-color: black;
+  color:white;
+  display:flex;
+  justify-content:flex-end
+
+}
+.button{
+  margin-left:8px
+}
+
+:hover.button{
+  color: #c23369;
+}
+.logo{
+  background-color: black
+}
+
+.transitions-item {
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 80px;
+}
+.script-box {
+  will-change: width, height, left, top;
+  position: relative;
+}
+
+.routeu {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+}
+
+
+
+.description {
+  color:white;
+}
+
+.anim{
+  /* width:50VW; */
+  height:250px;
+  margin-bottom:40px;
+  margin-left: 8%;
+}
+
+.photo{
+  width:300px;
+  height:300px;
+  border-radius: 50px;
+}
+.head{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+
+.imgsite{
+  height:30vh;
+  width:50vh;
+}
+.titresite{
+font-size: 1rem;
+  color:white;
+  text-align: left;
+  position:absolute;
+  top:50%;
+  left:40%
+
+  
+}
+.card{
+  color:white;
+  display:flex;
+  flex-direction: column;
+  margin:0;
+  position:relative
+  
+}
+.projet{
+  display:flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  margin:  auto;
+}
+
+.lienroute{ 
+  text-decoration: none;
+  color:white
+
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #c23369;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: white;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+
+.bm-item {
+  display: inline-block;
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #b8b7ad;
+  transition: color 0.2s;
+  outline:none;
+  font-size:2rem;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+.separationwbst img {
+  max-width: 369px;
+}
+.separationwbst{
+  margin-top: 43px;
+  margin-bottom: 47px;
+}
+
+h1{
+  color:white
+}
+
+#trunk{
+  width:100vw;
+  height:100vh
+}
+
+
+.form {
+  width: 30%;
+  max-width: 510px;
+  min-width: 324px;
+  margin: 4% 2% 4% 4%;
+  height: fit-content;
+  background-color: #dadcd9e0;
+  box-shadow: 5px 4px 1px 0 #cbcbcb, 5px 4px 1px 0 #cbcbcb;
+}
+@media only screen and (max-width: 1200px) {
+  .form {
+    width: 100%;
+  }
+
+}
+.formTitle {
+  padding: 50px 10px;
+  border-bottom: 1px solid grey; 
+  text-align: center;
+}
+.formTitleText {
+  display: inline-block;
+  border-bottom: 1px solid hsla(100%, 100%, 100%, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0;
+  color: black;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+  padding: 25px 40px;
+}
+
+input, textarea{
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: black;
+  border: 1px solid grey;
+  padding: 6px 10px;
+}
+label {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  color: #000000;
+}
