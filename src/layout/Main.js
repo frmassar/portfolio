@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../css/App.css';
 import AnimName  from '../components/AnimName'
 import Separation from '../components/Separation'
 import Description from '../components/description'
-import Website from '../components/website'
-import Separationwebst from '../components/Separationwebst'
-function Main() {
+// import Separationwebst from '../components/Separationwebst'
+class Main extends Component {
+    
+render()
+{
     return (
+    
         <div className="Main">
             <div className="head">
                 <div className="anim">
@@ -16,15 +19,12 @@ function Main() {
             <div className="description">
                 <Description></Description>
             </div>
-            <Separation></Separation>
-            <div className="separationwbst">
+            {/* <Separation></Separation> */}
+            {/* <div className="separationwbst">
                 <Separationwebst/>
-            </div>
-            <div className="website">
-                <Website/>
-            </div>
+            </div> */}
         </div>
 
-);
+);}
 }
 export default Main;

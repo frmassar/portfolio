@@ -1,26 +1,58 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/App.css'
-class Formulaire extends Component {
-	render() {
-        return (
-            <div className="form">
-                <div className="formTitle">
-                    <p className="formTitleText">Contact</p>
-                </div>
-                <form >
-                    <label htmlFor="">Nom </label>
-                    <input className="formName" type="text" name="name" placeholder="Francois"/>
-                    <label htmlFor="">Un projet?</label>
-                    <textarea type="textarea" name="description" placeholder="Si vous avez un projet à me soumettre, c'est ici..."/>
-                    <div className="submitBtnCard">
-                    <label htmlFor="">Mail </label>
-                    <input className="formName" type="text" name="Mail" placeholder="jl@gmail.com"/>
-                        <input type="submit" name="submit"  value="submit"  className="submitBtn"/>
-                    </div>
-                </form>
+const Formulaire = (props) => {
+
+
+  console.log(props.isHidden)
+
+  const handleChangePage = () => {
+    setTimeout(()=>{
+      props.history.push('/');
+    }, 3000)
+  }
+
+  return (
+      <div className="background">
+        <span className={props.isHidden?"bh":"bhHidden"}></span>
+      <div className="container">
+        <div className="screen">
+          <div className="screen-header">
+          </div>
+          <div className="screen-body">
+            <div className="screen-body-item left">
+              <div className="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div className="app-contact">CONTACT INFO : +32 476 75 89 04</div>
             </div>
-		)
-    }
+            <div className="screen-body-item">
+              <form className="app-form" onSubmit={(e)=>props.addForm(e)}>
+                <div className="app-form-group">
+                  <input className="app-form-control" name="name" placeholder="NAME" />
+                </div>
+                <div className="app-form-group">
+                  <input className="app-form-control" name="email" placeholder="EMAIL"/>
+                </div>
+                <div className="app-form-group">
+                  <input className="app-form-control" name="num" placeholder="CONTACT NO"/>
+                </div>
+                <div className="app-form-group message">
+                  <input className="app-form-control" name="message" placeholder="MESSAGE"/>
+                </div>
+                <div className="app-form-group buttons">
+                  <div className={props.isHidden?"paper":"paperHidden"}></div>
+                    <button onClick={()=>handleChangePage()} type="submit" className={props.isHidden? "button":"app-form-button"}>
+                      SEND
+                    </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Formulaire;

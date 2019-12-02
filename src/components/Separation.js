@@ -1,4 +1,4 @@
-import { render } from 'react-dom'
+
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
 import '../css/App.css'
@@ -26,5 +26,3 @@ export default function Sep() {
         })
         return <div className="routeu"><animated.div className="script-box" style={props} /> </div>
 }
-
-// render(<Sep />, document.getElementById('root'))

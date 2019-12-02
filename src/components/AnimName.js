@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { render } from 'react-dom'
 import { useTransition, animated } from 'react-spring'
 import '../css/App.css'
 
@@ -22,12 +21,13 @@ function Anim() {
     ref.current.map(clearTimeout)
     ref.current = []
     set([])
-    ref.current.push(setTimeout(() => set(['François', 'Junior', 'Webdev']), 2000))
-    ref.current.push(setTimeout(() => set(['François', 'Junior']), 5000))
-    ref.current.push(setTimeout(() => set(['François', 'Junior', 'Webdev']), 8000))
+    ref.current.push(setTimeout(() => set(['Francois', 'Junior', 'Webdev']), 2000))
+    ref.current.push(setTimeout(() => set(['Francois', 'Junior']), 5000))
+    ref.current.push(setTimeout(() => set(['Francois', 'Junior', 'Webdev']), 8000))
     }, [])
 
-    useEffect(() => void reset(), [])
+    useEffect(() =>
+     void reset(), [])
 
     return (
     <div className="logo">
@@ -40,5 +40,4 @@ function Anim() {
     )
 }
 
-render(<Anim />, document.getElementById('root'))
 export default Anim
